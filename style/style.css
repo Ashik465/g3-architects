@@ -1,49 +1,113 @@
 /* google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;600&display=swap');
 /* common style ----------- */
 
-*{
+
+
+body {
     font-family: 'Work Sans', sans-serif;
-    
+  max-width: 1200px;
+  margin: 30px auto;
+  background: rgba(255, 144, 14, 0.1);
 }
 
-body{
- 
-    max-width: 1200px;
-    margin: 0 auto;
+.btn-primary {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+  width: 180px;
+  height: 64px;
 }
 
-/* <!-- nav section  --> */
+/* <!-- nav section ------------------------ --> */
 
-.nav{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
- 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-title{
-    color: #131313;
-    font-weight: 700;
-font-size: 45px;
+.nav-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 45px;
 }
-.nav-list{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav .nav-list li {
-    list-style: none;
-    
+  list-style: none;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: #424242;
-    font-weight: 500;
-font-size: 18px;
+  text-decoration: none;
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
 }
+
+/* <!-- Brand new Architects section  --> */
+
+.brand-new {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.brand-title {
+  margin-bottom: 30px;
+  color: #131313;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.brand-description {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* <!-- Architects-banner section  --> */
+
+.Architects-banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -52,13 +116,20 @@ font-size: 18px;
 
 /* for mobile */
 
-@media only screen and (max-width:688px) {
-    
+@media only screen and (max-width: 688px) {
+  /* nav responsive style  */
+  .nav,
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+.nav-title{
+    margin-bottom: 5px; ;
+}
 
-    /* nav responsive style  */
-    .nav , .nav-list{
-        flex-direction: column;
-    }
+.article{
+    margin-top: 0;
+}
 
-    
+
 }
