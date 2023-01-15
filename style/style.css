@@ -2,12 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;600&display=swap");
 /* common style ----------- */
 
-/* body {
-    font-family: 'Work Sans', sans-serif;
-  max-width: 1200px;
-  margin: 30px auto;
-  background: rgba(255, 144, 14, 0.1);
-} */
+
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0px;
@@ -16,12 +11,13 @@ body {
 
 .header {
   background: rgba(255, 144, 14, 0.1);
-  padding: 50px;
+  padding:50px 150px ;
 }
 
-main {
-  padding: 50px;
+main, footer {
+  padding:50px 150px ;
 }
+
 .btn-primary {
   color: #ffffff;
   font-weight: 600;
@@ -74,7 +70,7 @@ main {
   font-size: 18px;
 }
 
-/* <!-- Brand new Architects section  --> */
+/* <!-- Brand new Architects section ------------------- --> */
 
 .brand-new {
   display: flex;
@@ -104,7 +100,7 @@ main {
   margin-bottom: 30px;
 }
 
-/* <!-- Architects-banner section  --> */
+/* <!-- Architects-banner section ------------------- --> */
 
 .Architects-banner img {
   width: 100%;
@@ -125,7 +121,6 @@ main {
 .list-banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
 }
 
 .quick-list-banner {
@@ -138,7 +133,7 @@ main {
 
 .list-banner img {
   width: 100%;
-  /* height: 100%; */
+ 
   object-fit: contain;
 }
 
@@ -226,7 +221,6 @@ main {
 
 .banner-pic {
   position: relative;
-  /* width: 100%; */
 }
 
 .absolute-btn {
@@ -258,7 +252,7 @@ main {
   transform: rotate(400deg);
 }
 
-/* our sponsor section  */
+/* our sponsor section --------------------------- */
 
 .our-sponsor-info {
   text-align: center;
@@ -274,13 +268,105 @@ main {
   filter: grayscale(100%);
 }
 
+
+/* <!-- lets start a conversation section  ---------------------> */
+
+
+.conversation-title{
+    text-align: center;
+    font-size: 24px;
+    color: #101820;
+}
+.conversation-container{
+  background-color: #f2f2f2;
+padding: 5px 20px 15px 20px;
+border: 1px solid lightgray;
+border-radius: 4px;
+margin-bottom: 100px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea
+{ width: 100%;
+    padding: 12px;
+    background-color: white;
+    border-radius: 0px;
+    margin: 10px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    border: none;
+   border-bottom:1px solid#11171d;
+}
+
+input[type="submit"]{
+        background-color: #11171d;
+        color: white;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+    input[type="submit"]:hover{
+        background-color: darkorange;
+     }
+     
+
+     input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+        border-bottom:1px solid rgb(255,0,106);
+
+}
+
+form{
+    
+    max-width:550px;
+   width:90%;
+    background:white;
+   margin:1vh auto auto;
+    padding:40px;
+    border-radius:3px;
+        box-sizing:border-box;
+    }
+
+/* footer section - ---------------------------- */
+
+
+
+.footer-title h3 {
+    background: #FFF4E7;
+border-radius: 8px;
+padding: 20px ;
+    color: #424242;
+    font-weight: 400;
+font-size: 20px;
+text-align: center;
+
+}
+
 /* responsive style ----------------------------------------
 ------------------------------------------------------------ */
 
 /* for mobile -------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 688px) {
-  /* nav responsive style  */
+
+    .header {
+        background: rgba(255, 144, 14, 0.1);
+        padding:50px ;
+      }
+      
+      main, footer {
+        padding:50px ;
+      }
+  /* nav responsive style --------------------- */
   .nav,
   .nav-list {
     flex-direction: column;
@@ -295,7 +381,7 @@ main {
     margin-top: 0;
   }
 
-  /* quick list responsive  */
+  /* quick list responsive --------------------------- */
 
   .quick-list-container {
     flex-direction: column;
@@ -351,4 +437,21 @@ main {
     flex-direction: column;
     row-gap: 30px;
   }
+
+/* <!-- lets start a conversation section responsive ---------------------> */
+
+.conversation-title {
+    font-size: 20px;
+}
+
+input[type="submit"] {
+
+    padding: 15px ;
+
+}
+
+.conversation-container p span {
+ white-space: nowrap;
+}
+
 }
