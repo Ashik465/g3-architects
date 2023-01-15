@@ -11,6 +11,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0px;
+  width: 100%;
 }
 
 .header {
@@ -154,6 +155,81 @@ main {
   font-size: 45px;
 }
 
+/* <!-- Features section --------- ----------------------------> */
+
+.feature-container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  column-gap: 100px;
+}
+
+.feature {
+  width: 45%;
+}
+
+.feature-banner {
+  width: 55%;
+}
+
+.feature-banner .banner-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.feature-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 45px;
+  margin-left: 20px;
+}
+
+.vl {
+  border-left: 5px solid #ff900e;
+}
+
+.feature-item {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 5px 15px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.feature-item-title {
+  color: #131313;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.btn-absolute {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 50px;
+  border: none;
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+}
+
+.btn-absolute span {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.banner-pic {
+  position: relative;
+  /* width: 100%; */
+}
+
+.absolute-btn {
+  position: absolute;
+  bottom: -50px;
+  left: -60px;
+}
+
 /* responsive style ----------------------------------------
 ------------------------------------------------------------ */
 
@@ -167,7 +243,8 @@ main {
     gap: 20px;
   }
   .nav-title {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    white-space: nowrap;
   }
 
   .article {
@@ -185,5 +262,26 @@ main {
   }
   .quick-list-title {
     font-size: 35px;
+  }
+  /* <!-- Features section --------- ----------------------------> */
+
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-title {
+    font-size: 30px;
+  }
+
+  .btn-absolute {
+    font-size: 20px;
+  }
+
+  .btn-absolute span {
+    font-size: 10px;
+  }
+
+  .feature-item {
+    width: 100%;
   }
 }
