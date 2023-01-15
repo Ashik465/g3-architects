@@ -162,6 +162,7 @@ main, footer {
   margin-top: 50px;
   margin-bottom: 50px;
   column-gap: 100px;
+  align-items: center;
 }
 
 .feature {
@@ -174,7 +175,7 @@ main, footer {
 
 .feature-banner .banner-pic img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .feature-title {
